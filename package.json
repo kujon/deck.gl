@@ -20,6 +20,7 @@
     "dist-es6",
     "src"
   ],
+  "typings": "./index.d.ts",
   "scripts": {
     "start": "(cd examples/layer-browser && (path-exists node_modules || npm i) && npm run start-local)",
     "build-clean": "rm -fr dist dist-es6 && mkdir -p dist dist-es6",
@@ -56,6 +57,8 @@
     "utm": "^1.1.1"
   },
   "devDependencies": {
+    "@types/geojson": "^1.0.2",
+    "@types/react": "^15.6.0",
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
